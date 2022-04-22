@@ -1,5 +1,5 @@
 import './main.scss';
 
-import Modal from './dist/scripts/modal';
+import Modal from './scripts/modal';
 
 Modal().init();
