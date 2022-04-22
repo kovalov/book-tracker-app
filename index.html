@@ -24,37 +24,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__container page-container">
-        <div class="page-main__accordion">
-          <div class="page-main__accordion-item">
-            <button class="page-main__accordion-item-header">
-              <h2 class="page-main__accordion-item-title">To read</h2>
-              <i
-                class="page-main__accordion-item-icon fa-solid fa-chevron-down"
-              ></i>
-            </button>
-            <div class="page-main__accordion-item-content">
-              <p class="page-main__accordion-item-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Iure dolore illum eligendi tempore eaque facere
-                voluptates molestias possimus ex! Itaque.
-              </p>
-            </div>
-          </div>
-          <div class="page-main__accordion-item">
-            <button class="page-main__accordion-item-header">
-              <h2 class="page-main__accordion-item-title">Reading</h2>
-              <i
-                class="page-main__accordion-item-icon fa-solid fa-chevron-down"
-              ></i>
-            </button>
-            <div class="page-main__accordion-item-content">
-              <p class="page-main__accordion-item-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Iure dolore illum eligendi tempore eaque facere
-                voluptates molestias possimus ex! Itaque.
-              </p>
-            </div>
-          </div>
+        <!-- <div class="page-main__accordion">
           <div class="page-main__accordion-item">
             <button class="page-main__accordion-item-header">
               <h2 class="page-main__accordion-item-title">Read</h2>
@@ -70,12 +40,73 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
-    <button class="page-button">
+    <button class="page-button" data-modal-button="open">
       <i class="page-button__icon fa-solid fa-plus fa-2x"></i>
     </button>
+    <div class="page-modal hidden" data-modal>
+      <div class="page-modal__content">
+        <div class="page-modal__header">
+          <span class="page-modal__header-title">Add new book</span>
+          <button
+            class="page-modal__header-button"
+            data-modal-button="close"
+          >
+            <i
+              class="page-modal__header-button-icon fa-solid fa-xmark fa-2x"
+            ></i>
+          </button>
+        </div>
+        <div class="page-modal__main">
+          <form class="page-modal__form" data-modal-form>
+            <div class="page-modal__form-group">
+              <label for="book-name" class="page-modal__form-label"
+                >Book name</label
+              >
+              <input
+                type="text"
+                id="book-name"
+                name="bookName"
+                class="page-modal__form-input"
+                placeholder="Enter book name"
+                required
+              />
+            </div>
+            <div class="page-modal__form-group">
+              <label for="book-author" class="page-modal__form-label"
+                >Author</label
+              >
+              <input
+                type="text"
+                id="book-author"
+                name="bookAuthor"
+                class="page-modal__form-input"
+                placeholder="Enter author name"
+                required
+              />
+            </div>
+            <div class="page-modal__form-group">
+              <label for="book-pages" class="page-modal__form-label"
+                >Number of pages</label
+              >
+              <input
+                type="text"
+                id="book-pages"
+                name="bookPages"
+                class="page-modal__form-input"
+                placeholder="Enter number of pages"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="page-modal__footer">
+          <button class="page-modal__footer-button" data-modal-button="submit">Submit</button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
