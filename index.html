@@ -7,10 +7,75 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <script
+      src="https://kit.fontawesome.com/27162ffc55.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__container page-container">
+        <a href="#" class="page-header__link">
+          <i class="page-header__icon fa-solid fa-book fa-2x"></i>
+        </a>
+        <span class="page-header__title">Book tracker app</span>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__container page-container">
+        <div class="page-main__accordion">
+          <div class="page-main__accordion-item">
+            <button class="page-main__accordion-item-header">
+              <h2 class="page-main__accordion-item-title">To read</h2>
+              <i
+                class="page-main__accordion-item-icon fa-solid fa-chevron-down"
+              ></i>
+            </button>
+            <div class="page-main__accordion-item-content">
+              <p class="page-main__accordion-item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Iure dolore illum eligendi tempore eaque facere
+                voluptates molestias possimus ex! Itaque.
+              </p>
+            </div>
+          </div>
+          <div class="page-main__accordion-item">
+            <button class="page-main__accordion-item-header">
+              <h2 class="page-main__accordion-item-title">Reading</h2>
+              <i
+                class="page-main__accordion-item-icon fa-solid fa-chevron-down"
+              ></i>
+            </button>
+            <div class="page-main__accordion-item-content">
+              <p class="page-main__accordion-item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Iure dolore illum eligendi tempore eaque facere
+                voluptates molestias possimus ex! Itaque.
+              </p>
+            </div>
+          </div>
+          <div class="page-main__accordion-item">
+            <button class="page-main__accordion-item-header">
+              <h2 class="page-main__accordion-item-title">Read</h2>
+              <i
+                class="page-main__accordion-item-icon fa-solid fa-chevron-down"
+              ></i>
+            </button>
+            <div class="page-main__accordion-item-content">
+              <p class="page-main__accordion-item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Iure dolore illum eligendi tempore eaque facere
+                voluptates molestias possimus ex! Itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <button class="page-button">
+      <i class="page-button__icon fa-solid fa-plus fa-2x"></i>
+    </button>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

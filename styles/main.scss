@@ -1,0 +1,35 @@
+.page-main {
+}
+
+.page-main__container {
+}
+
+.page-main__accordion {
+}
+
+.page-main__accordion-item {
+  margin-bottom: 2rem;
+}
+
+.page-main__accordion-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid $primary-color;
+}
+
+.page-main__accordion-item-title {
+}
+
+.page-main__accordion-item-icon {
+}
+
+.page-main__accordion-item-content {
+  display: none;
+  padding: 1rem;
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  //   gap: 1rem;
+}
