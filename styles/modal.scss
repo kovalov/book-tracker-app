@@ -21,19 +21,24 @@
 
 .page-modal__header {
   background-color: $primary-color;
-  padding: 1rem;
+  padding: 0 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .page-modal__header-title {
   font-size: 2rem;
   font-weight: 400;
+  padding: 1rem 0;
+}
+
+.page-modal__header-icon {
+  margin-right: 1rem;
 }
 
 .page-modal__header-button {
   padding: 1rem;
+  margin-left: auto;
 }
 
 .page-modal__header-button-icon {
