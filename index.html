@@ -68,7 +68,7 @@
               <input
                 type="text"
                 id="book-name"
-                name="bookName"
+                name="name"
                 class="page-modal__form-input"
                 placeholder="Enter book name"
                 required
@@ -81,7 +81,7 @@
               <input
                 type="text"
                 id="book-author"
-                name="bookAuthor"
+                name="author"
                 class="page-modal__form-input"
                 placeholder="Enter author name"
                 required
@@ -94,16 +94,60 @@
               <input
                 type="text"
                 id="book-pages"
-                name="bookPages"
+                name="totalPages"
                 class="page-modal__form-input"
                 placeholder="Enter number of pages"
                 required
               />
             </div>
+            <div class="page-modal__form-group">
+              <label for="book-status" class="page-modal__form-label"
+                >Status</label
+              >
+              <select
+                name="status"
+                id="book-status"
+                class="page-modal__form-select"
+                requided
+              >
+                <option
+                  value="to-read"
+                  class="page-modal__form-select-option"
+                  selected
+                >
+                  To read
+                </option>
+                <option
+                  value="reading"
+                  class="page-modal__form-select-option"
+                >
+                  Reading
+                </option>
+                <option
+                  value="read"
+                  class="page-modal__form-select-option"
+                >
+                  Read
+                </option>
+              </select>
+              <!-- <input
+                type="text"
+                id="book-pages"
+                name="bookPages"
+                class="page-modal__form-input"
+                placeholder="Enter number of pages"
+                required
+              /> -->
+            </div>
           </form>
         </div>
         <div class="page-modal__footer">
-          <button class="page-modal__footer-button" data-modal-button="submit">Submit</button>
+          <button
+            class="page-modal__footer-button"
+            data-modal-button="submit"
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
